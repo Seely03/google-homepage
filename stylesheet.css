@@ -5,33 +5,62 @@ height:auto;
 padding-top:130px;
 margin:0 auto;
 }
+.header{
+    height:2.5rem;
+}
 .header-left{
     position:absolute;
     top:0;
     left:0;
-    height:2.5rem;
+    padding-top:30px;
+    padding-left:20px;
+    font-size: smaller;    
 }
 .header-right{
 position: absolute;
 top:0;
 right:0;
-height:2.5rem;
+padding-right: 20px;
+padding-top: 30px;
+font-size: smaller;
 }
+
 .header-right button{
     background-color:#4484f4;
     color: white;
+    height: 20px;
 }
 
 #apps{ 
     width: 25px;
     height:25px;
+   
 }
 .logo{
 text-align:center;
-margin-top: 196px;
+margin-top: 100px;
 }
-#searchbar{
-text-align:center;
+.search{
+   width: 100%;
+   text-align:center;
+   color: #ffffff;
+}
+.search input{
+    height: 34px;
+    width:527px;
+    border-radius:25px ;
+    background-color: #ffffff;
+}
+.buttons{
+    width:100%;
+    text-align: center;
+    padding-top: 20px;
+}
+.buttons button{
+    background-color:#f8f9fa;
+    height: 36px;
+    width:127.367;
+
 }
 a{
     color:#757575
