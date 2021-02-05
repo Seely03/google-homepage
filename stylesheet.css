@@ -4,28 +4,42 @@
 height:auto;
 padding-top:130px;
 margin:0 auto;
+
 }
 body{
     overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body a{
+    text-decoration: none;
+}
+body a:hover{
+    text-decoration: underline;
+    cursor:pointer;
 }
 .header{
     height:2.5rem;
 }
 .header-left{
+    display:flex;
     position:absolute;
     top:0;
     left:0;
     padding-top:30px;
     padding-left:20px;
-    font-size: smaller;    
+    font-size: smaller;
+    gap:15px;
 }
 .header-right{
+display:flex;
 position: absolute;
 top:0;
 right:0;
 padding-right: 20px;
 padding-top: 30px;
 font-size: smaller;
+gap:15px;
+
 }
 
 .header-right button{
@@ -33,6 +47,9 @@ font-size: smaller;
     color: white;
     height: 30px;
     width:69.3167px;
+    font-weight: bold ;
+    font-size: normal;
+
 }
 
 #apps{ 
@@ -45,7 +62,6 @@ text-align:center;
 margin-top: 100px;
 }
 .search{
-   width: 100%;
    text-align:center;
    color: #ffffff;
 }
@@ -55,17 +71,34 @@ margin-top: 100px;
     border-radius:25px ;
     background-color: #ffffff;
     margin-top: 25px;
+    border-color: #dfe1e5;
+    border-width: 1px;
+}
+.search input:hover{
+    box-shadow: 1px 1px 4px #333;
 }
 .buttons{
+    display: flex;
     width:100%;
-    text-align: center;
     padding-top: 20px;
+    border-width: 0px;
+    border:none;
+    border-style: none;
+    justify-content: center;
+    gap: 13px;
+
 }
 .buttons button{
     background-color:#f8f9fa;
     height: 36px;
     width:127.367;
-
+    color: #757d8a;
+    }
+.buttons button:hover{
+    color:#000000;
+    border-width:1px;
+    border-color: #000000;
+    cursor:pointer;
 }
 a{
     color:#757575
@@ -74,7 +107,8 @@ a{
     display:flex;
     background-color: #f2f2f2;
     font-size: small;
-    
+    width: 100px;
+    margin: 0 -5px;
 }
 .footer-left{
     display:flex;
@@ -85,16 +119,18 @@ a{
     height:2.5rem;
     background-color: #f2f2f2;
     padding-left:20px;
-    align-items: center;
-    
-    
+    align-items: center;  
+    gap:25px;
 }
 .footer-right{
+    display:flex;
     position: absolute;
     bottom:0;
     right:0;
     height:2.5rem;
     padding-right: 20px;
+    align-items: center;
+    gap:25px;
     
 
 }
